@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="CORONAVIRUS COVID-19\n Global Cases"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            app:fontFamily="@font/poppins_bold" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalConfirmed"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Confirmed"
+            android:textColor="#fff"
+            app:fontFamily="@font/poppins_bold" />
+
+        <TextView
+            android:id="@+id/tvTotalConfirmed"
+            style="@style/TotalFontSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="163422"
+            android:textColor="@color/colorConfirmed"
+            app:fontFamily="@font/poppins_bold" />
+
+
+        <TextView
+            android:id="@+id/tvLabelTotalDeaths"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Deaths"
+            android:textColor="#fff"
+            app:fontFamily="@font/poppins_bold" />
+
+        <TextView
+            android:id="@+id/tvTotalDeaths"
+            style="@style/TotalFontSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75648"
+            android:textColor="@color/colorTotalDeatch"
+            app:fontFamily="@font/poppins_bold" />
+
+
+        <TextView
+            android:id="@+id/tvLabelTotalRecovered"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Recovered"
+            android:textColor="#fff"
+            app:fontFamily="@font/poppins_bold" />
+
+        <TextView
+            android:id="@+id/tvTotalRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TotalFontSize"
+            android:text="76543"
+            android:textColor="@color/colorTotalRecovered"
+            app:fontFamily="@font/poppins_bold" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_circular_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress">
+
+    </ProgressBar>
+
+</RelativeLayout>
